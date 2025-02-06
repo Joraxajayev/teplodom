@@ -16,7 +16,10 @@ const Navbar = () => {
       <div className="container">
         <div className="nav-top">
           <div className="nav-logo">
+            <Link to='/'>
+            
             <img src={logo} alt="logo" />
+            </Link>
           </div>
           <div className="searchContainer">
             <img src={searchIcn} alt="" />
