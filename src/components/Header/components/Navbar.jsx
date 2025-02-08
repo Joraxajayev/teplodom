@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../assets/logo.svg";
-import searchIcn from "../../../assets/search_icn.svg";
-import like from "../../../assets/heart_icn.svg";
-import basket from "../../../assets/cart_icn.svg";
-import user from "../../../assets/user_icn.svg";
+import logo from "@/assets/logo.svg";
+import searchIcn from "@/assets/search_icn.svg";
+import like from "@/assets/heart_icn.svg";
+import basket from "@/assets/cart_icn.svg";
+import user from "@/assets/user_icn.svg";
 
-import "./Navbar.css";
+import "../styles/Navbar.scss";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("newProd");
@@ -16,34 +16,49 @@ const Navbar = () => {
       <div className="container">
         <div className="nav-top">
           <div className="nav-logo">
-            <Link to='/'>
-            
-            <img src={logo} alt="logo" />
+            <Link to="/">
+              <img src={logo} alt="logo" />
             </Link>
           </div>
-          <div className="searchContainer">
-            <img src={searchIcn} alt="" />
-            <input type="text" placeholder="Поиск..." className="searchInput" />
+          <div className="search_input">
+            <div className="menu_sidebar_content">
+            <label for="menuopener" className="menu_sidebar"> </label>
+              {/* <span className="menu_settings"></span> */}
+            </div>
+            <div className="searchContainer">
+              <img src={searchIcn} alt="" />
+              <input
+                type="text"
+                placeholder="Поиск..."
+                className="searchInput"
+              />
+            </div>
+            <div className="menu_settings_content">
+            <label for="menuopener" className="menu_settings"> </label>
+            </div>
           </div>
-          <div className="likes">
-            {/* <Link style={{ textDecoration: "none" }}> */}
-            <img src={like} alt="likes" />
-            {/* </Link> */}
-          </div>
-          <div className="cart">
-            {/* <Link style={{ textDecoration: "none"}}> */}
-            <img src={basket} alt="cart" />
-            {/* </Link> */}
-            {/* <div className="nav_cart_count">0</div> */}
-          </div>
-          <div className="profile">
-            {/* <Link style={{ textDecoration: "none"}}> */}
-            <img src={user} alt="profile" />
-            <span>Профиль</span>
-            {/* </Link> */}
+          <div className="nav_btns">
+            <div className="likes">
+              {/* <Link style={{ textDecoration: "none" }}> */}
+              <img src={like} alt="likes" />
+              {/* </Link> */}
+            </div>
+            <div className="cart">
+              {/* <Link style={{ textDecoration: "none"}}> */}
+              <img src={basket} alt="cart" />
+              {/* </Link> */}
+              {/* <div className="nav_cart_count">0</div> */}
+            </div>
+            <div className="profile">
+              {/* <Link style={{ textDecoration: "none"}}> */}
+              <img src={user} alt="profile" />
+              <span>Профиль</span>
+              {/* </Link> */}
+            </div>
           </div>
         </div>
         <div className="nav-end">
+          <input type="checkbox" id="menuopener" />
           <ul className="nav_menu">
             <Link
               to="/sale"
@@ -54,6 +69,7 @@ const Navbar = () => {
                 }}
                 className={menu === "sale" ? "active" : ""}>
                 Товары по акции
+              <hr className="nav_line" />
               </li>
             </Link>
             <Link
@@ -65,7 +81,9 @@ const Navbar = () => {
                 }}
                 className={menu === "newProd" ? "active" : ""}>
                 Новинки
+              <hr className="nav_line" />
               </li>
+
             </Link>
             <Link
               to="/suppliers"
@@ -76,7 +94,9 @@ const Navbar = () => {
                 }}
                 className={menu === "suppliers" ? "active" : ""}>
                 Поставщикам
+              <hr className="nav_line" />
               </li>
+
             </Link>
             <Link
               to="/contact"
@@ -87,7 +107,9 @@ const Navbar = () => {
                 }}
                 className={menu === "contact" ? "active" : ""}>
                 Контакты
+              <hr className="nav_line" />
               </li>
+
             </Link>
             <Link
               to="/withdrawal"

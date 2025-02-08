@@ -1,0 +1,56 @@
+// Tailwind CSS ga o'xshash breakpoints ro'yxati (default 'xs': 0 qo'shildi)
+$breakpoints: (
+  "xs": 0,
+  "sm": 640px,
+  "md": 768px,
+  "lg": 1024px,
+  "xl": 1280px,
+  "2xl": 1536px,
+);
+
+// 'respond' mixin: min-width uchun
+// Agar breakpoint 'xs' yoki hech narsa berilmasa, media query yaratilmaydi.
+@mixin respond($breakpoint: "xs") {
+  @if $breakpoint == "xs" {
+    @content;
+  } @else if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Noto'g'ri breakpoint: '#{$breakpoint}'. Mavjud breakpointlar: #{map-keys($breakpoints)}.";
+  }
+}
+
+// 'respond-max' mixin: max-width uchun
+// Default qiymat sifatida '2xl' beriladi. Agar breakpoint '2xl' bo'lsa, media query yaratilmaydi.
+@mixin respond-max($breakpoint: "2xl") {
+  @if $breakpoint == "2xl" {
+    @content;
+  } @else if map-has-key($breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Noto'g'ri breakpoint: '#{$breakpoint}'. Mavjud breakpointlar: #{map-keys($breakpoints)}.";
+  }
+}
+
+// Foydalanish namunasi:
+.my-element {
+  // Barcha ekranlar uchun (default: xs)
+  font-size: 14px;
+  color: black;
+
+  // Min-width mixin: 'md' breakpointdan boshlab uslublar qo'llaniladi
+  @include respond("md") {
+    font-size: 18px;
+    color: blue;
+  }
+
+  // Max-width mixin: 'lg' breakpointgacha (ya'ni lg va undan kichik ekranlarda) uslublar qo'llaniladi
+  @include respond-max("lg") {
+    font-size: 12px;
+    color: green;
+  }
+}

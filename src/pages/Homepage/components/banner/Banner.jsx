@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-import Banner1 from "../../assets/Banner_1.png";
-import Banner2 from "../../assets/Banner_2.png";
-import Banner3 from "../../assets/Banner_3.png";
-import Banner4 from "../../assets/Banner_4.png";
-import BannerBg1 from "../../assets/Banner_bg_1.png";
-import BannerBg2 from "../../assets/Banner_bg_2.png";
-import BannerBg3 from "../../assets/Banner_bg_3.png";
-import BannerBg4 from "../../assets/Banner_bg_4.png";
-import "./Banner.css";
+// import Banner1 from "../../assets/Banner_1.png";
+import Banner1 from "@/assets/Banner_1.png";
+import Banner2 from "@/assets/Banner_2.png";
+import Banner3 from "@/assets/Banner_3.png";
+import Banner4 from "@/assets/Banner_4.png";
+import BannerBg1 from "@/assets/Banner_bg_1.png";
+import BannerBg2 from "@/assets/Banner_bg_2.png";
+import BannerBg3 from "@/assets/Banner_bg_3.png";
+import BannerBg4 from "@/assets/Banner_bg_4.png";
+import "../styles/Banner.scss";
 
 const banners = [
   {
@@ -72,8 +73,7 @@ const Banner = () => {
           backgroundPosition: "center",
           borderRadius: "20px",
           transition: "background-image 0.5s ease",
-        }}
-      >
+        }}>
         <div className="banner_wrapper">
           <div className="banner_content">
             <h2>{currentBanner.title}</h2>
@@ -83,10 +83,7 @@ const Banner = () => {
                 <button
                   key={banner.id}
                   className={index === currentIndex ? "active" : ""}
-                  onClick={() => setCurrentIndex(index)}
-                >
-                  
-                </button>
+                  onClick={() => setCurrentIndex(index)}></button>
               ))}
             </div>
           </div>

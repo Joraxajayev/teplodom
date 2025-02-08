@@ -1,7 +1,9 @@
 import { Route, BrowserRouter as Router, Routes} from "react-router-dom";
-import Navbar from "./features/header/components/Navbar";
-import NewProd from "./pages/NewProd";
-import Banner from "./features/banner/Banner";
+import Navbar from "./components/Header/components/Navbar";
+import Banner from "./pages/Homepage/components/banner/Banner";
+
+import './scss/index.scss'
+import NewProd from './pages/NewProduct/NewProd';
 
 
 function App() {
