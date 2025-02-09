@@ -22,7 +22,7 @@ const Navbar = () => {
           </div>
           <div className="search_input">
             <div className="menu_sidebar_content">
-              <label for="menuopener" className="menu_sidebar">
+              <label htmlFor="menuopener" className="menu_sidebar">
                 {" "}
               </label>
               {/* <span className="menu_settings"></span> */}
@@ -36,7 +36,7 @@ const Navbar = () => {
               />
             </div>
             <div className="menu_settings_content">
-              <label for="menuopener" className="menu_settings">
+              <label htmlFor="menuopener" className="menu_settings">
                 {" "}
               </label>
             </div>

@@ -1,11 +1,12 @@
 import React from "react";
 import Brands from "../../components/Brands/Brands";
-import Banner from "./components/banner/Banner";
+import Advantage from "../../components/Advantage/Advantage";
 
 const Home = () => {
   return (
     <div className="home">
       <Brands />
+      <Advantage/>
     </div>
   );
 };
