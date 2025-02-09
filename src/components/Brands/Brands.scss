@@ -1,0 +1,114 @@
+@import "../../scss/abstracts/mixins.scss";
+
+.brands {
+  margin-bottom: 100px;
+
+  @include respond-max("md") {
+    margin-bottom: 50px;
+  }
+}
+
+.brands_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include respond-max("md") {
+    gap: 20px;
+  }
+}
+
+.brands_content {
+  display: flex;
+  justify-content: space-between;
+
+  h2 {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    @include respond-max("md") {
+      font-size: 20px;
+    }
+  }
+}
+
+.control_btns {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @include respond-max("md") {
+    display: none;
+  }
+}
+
+.control_btns_left {
+  padding: 11px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #ff6600;
+  }
+}
+
+.control_btns_right {
+  padding: 11px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #ff6600;
+  }
+}
+
+.brands_card {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 32px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include respond-max("md") {
+    gap: 16px;
+  }
+}
+
+.brands_card_content {
+  background-color: #fff;
+  padding: 10px 16px;
+  scroll-snap-align: start;
+  border-radius: 15px;
+  width: 190px !important;
+  flex: 0 0 190px;
+
+  img {
+    width: 160px;
+
+    @include respond-max("md") {
+      width: 110px;
+    }
+  }
+
+  @include respond-max("md") {
+    width: 128px !important;
+    flex: 0 0 128px;
+    padding: 7px 11px;
+    border-radius: 12px;
+  }
+}

@@ -32,7 +32,6 @@
 .nav_btns {
   display: flex;
   align-items: center;
-  // width: 100%;
   justify-content: space-between;
   gap: 30px;
 
@@ -48,13 +47,6 @@
 }
 
 .search_input {
-  // display: flex;
-  // justify-content: center;
-  // width: 100%;
-
-  @include respond("md") {
-    // width: 445px !important;
-  }
   @include respond-max("md") {
     align-items: center;
     justify-content: space-between;
@@ -154,7 +146,6 @@
   width: 100%;
   outline: none;
   color: #333;
-  /* border-radius: 15px; */
 
   &::placeholder {
     color: #bbb;
@@ -233,7 +224,7 @@
     width: 80%;
     height: 100vh;
     padding-top: 15vh;
-    padding-left: 15px;
+    padding-left: 5px;
     background-color: #ffffff;
     align-items: start;
     flex-direction: column;
@@ -273,6 +264,7 @@
 
   @include respond-max("md") {
     width: 100%;
+    padding: 10px 15px;
     font-weight: 500;
     background-color: #ffffff;
     border-radius: 10px;
@@ -282,8 +274,7 @@
 
 .nav_line {
   margin-top: 20px;
-  max-width: 260px;
-  
+  width: 200px !important;
   border: 1px solid black;
 
   @include respond('md') {
