@@ -22,7 +22,9 @@ const Navbar = () => {
           </div>
           <div className="search_input">
             <div className="menu_sidebar_content">
-            <label for="menuopener" className="menu_sidebar"> </label>
+              <label for="menuopener" className="menu_sidebar">
+                {" "}
+              </label>
               {/* <span className="menu_settings"></span> */}
             </div>
             <div className="searchContainer">
@@ -34,26 +36,28 @@ const Navbar = () => {
               />
             </div>
             <div className="menu_settings_content">
-            <label for="menuopener" className="menu_settings"> </label>
+              <label for="menuopener" className="menu_settings">
+                {" "}
+              </label>
             </div>
           </div>
           <div className="nav_btns">
             <div className="likes">
-              {/* <Link style={{ textDecoration: "none" }}> */}
-              <img src={like} alt="likes" />
-              {/* </Link> */}
+              <Link style={{ textDecoration: "none" }}>
+                <img src={like} alt="likes" />
+              </Link>
             </div>
             <div className="cart">
-              {/* <Link style={{ textDecoration: "none"}}> */}
-              <img src={basket} alt="cart" />
-              {/* </Link> */}
+              <Link style={{ textDecoration: "none" }}>
+                <img src={basket} alt="cart" />
+              </Link>
               {/* <div className="nav_cart_count">0</div> */}
             </div>
             <div className="profile">
-              {/* <Link style={{ textDecoration: "none"}}> */}
-              <img src={user} alt="profile" />
-              <span>Профиль</span>
-              {/* </Link> */}
+              <Link style={{ textDecoration: "none" }}>
+                <img src={user} alt="profile" />
+                <span>Профиль</span>
+              </Link>
             </div>
           </div>
         </div>
@@ -69,7 +73,7 @@ const Navbar = () => {
                 }}
                 className={menu === "sale" ? "active" : ""}>
                 Товары по акции
-              <hr className="nav_line" />
+                <hr className="nav_line" />
               </li>
             </Link>
             <Link
@@ -81,9 +85,8 @@ const Navbar = () => {
                 }}
                 className={menu === "newProd" ? "active" : ""}>
                 Новинки
-              <hr className="nav_line" />
+                <hr className="nav_line" />
               </li>
-
             </Link>
             <Link
               to="/suppliers"
@@ -94,9 +97,8 @@ const Navbar = () => {
                 }}
                 className={menu === "suppliers" ? "active" : ""}>
                 Поставщикам
-              <hr className="nav_line" />
+                <hr className="nav_line" />
               </li>
-
             </Link>
             <Link
               to="/contact"
@@ -107,9 +109,8 @@ const Navbar = () => {
                 }}
                 className={menu === "contact" ? "active" : ""}>
                 Контакты
-              <hr className="nav_line" />
+                <hr className="nav_line" />
               </li>
-
             </Link>
             <Link
               to="/withdrawal"
