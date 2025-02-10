@@ -71,7 +71,7 @@ const Footer = () => {
                   </li>
                 </Link>
                 <li className="footer_contact_item_social">
-                  <Link to="https://t.me" target="_blank">
+                  <Link to="https://t.me/akbarxojaZ" target="_blank">
                     <img src={telegram} alt="telegram" />
                   </Link>
                   <Link to="https://instagram.com" target="_blank">
@@ -96,7 +96,7 @@ const Footer = () => {
               <hr className="footer_line" />
               <div>
                 <img src={copyRight} alt="" />
-                <span>2021 Teplodom. Все права защищены</span>
+                <span>2025 Teplodom. Все права защищены</span>
               </div>
               <hr className="footer_line" />
             </div>
