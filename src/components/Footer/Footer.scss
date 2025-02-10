@@ -70,6 +70,7 @@
     text-align: left;
 
     @include respond-max("md") {
+      padding-top: 20px;
       padding-bottom: 0;
       font-size: 18px;
     }
@@ -201,9 +202,27 @@
 
   div {
     display: flex;
-    color: #fff;
     align-items: center;
     justify-content: center;
     gap: 6px;
+
+    span {
+      color: rgb(255, 255, 255);
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      letter-spacing: 0%;
+      text-wrap: nowrap;
+      text-align: left;
+      @include respond() {
+        font-size: 12px;
+      }
+      @include respond("sm") {
+        font-size: 14px;
+      }
+      @include respond("md") {
+        font-size: 18px;
+      }
+    }
   }
 }
