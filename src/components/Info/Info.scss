@@ -34,7 +34,7 @@
   align-items: center;
 //   gap: 57px;
 
-  p {
+  .info_content_desc {
     color: rgb(0, 0, 0);
     font-family: Inter;
     font-size: 18px;
@@ -43,16 +43,18 @@
     letter-spacing: 0%;
     text-align: left;
 
+    div {
+      @include respond-max("lg") {
+          display: none;
+      }
+    }
+
     @include respond-max("md") {
         text-align: center;
     }
   }
 
-  div {
-    @include respond-max("lg") {
-        display: none;
-    }
-  }
+  
   img {
     @include respond("md") {
         width: 50%;
