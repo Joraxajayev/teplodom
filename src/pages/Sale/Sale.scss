@@ -1,0 +1,28 @@
+@import "../../scss/abstracts/mixins.scss";
+
+.sale {
+  height: 40vh;
+  margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.sale_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sale_content {
+  h2 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    @include respond-max('md') {
+        font-size: 20px;
+        line-height: 24px;
+    }
+  }
+}
