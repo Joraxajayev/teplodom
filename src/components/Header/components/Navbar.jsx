@@ -42,22 +42,22 @@ const Navbar = () => {
             </div>
           </div>
           <div className="nav_btns">
-            <div className="likes">
-              <Link to="/likes" style={{ textDecoration: "none" }}>
+            <Link to="/likes" style={{ textDecoration: "none" }}>
+              <div className="likes">
                 <img src={heartIcon} alt="Likes" />
-              </Link>
-            </div>
-            <div className="cart">
-              <Link to="/cart" style={{ textDecoration: "none" }}>
+              </div>
+            </Link>
+            <Link to="/cart" style={{ textDecoration: "none" }}>
+              <div className="cart">
                 <img src={cartIcon} alt="Cart" />
-              </Link>
-            </div>
-            <div className="profile">
-              <Link to="/profile" style={{ textDecoration: "none" }}>
+              </div>
+            </Link>
+            <Link to="/profile" style={{ textDecoration: "none" }}>
+              <div className="profile">
                 <img src={userIcon} alt="Profile" />
                 <span>Профиль</span>
-              </Link>
-            </div>
+              </div>
+            </Link>
           </div>
         </div>
 
@@ -65,50 +65,35 @@ const Navbar = () => {
         <div className="nav-end">
           <input type="checkbox" id="menuopener" />
           <ul className="nav_menu">
-            <li className={isActive("/sale") ? "active" : ""}>
-              <Link
-                to="/sale"
-                style={{ textDecoration: "none", }}
-              >
+            <Link to="/sale" style={{ textDecoration: "none" }}>
+              <li className={isActive("/sale") ? "active" : ""}>
                 Товары по акции
-              </Link>
                 <hr className="nav_line" />
-            </li>
-            <li className={isActive("/newProd") ? "active" : ""}>
-              <Link
-                to="/newProd"
-                style={{ textDecoration: "none", }}
-              >
+              </li>
+            </Link>
+            <Link to="/newProd" style={{ textDecoration: "none" }}>
+              <li className={isActive("/newProd") ? "active" : ""}>
                 Новинки
-              </Link>
                 <hr className="nav_line" />
-            </li>
-            <li className={isActive("/suppliers") ? "active" : ""}>
-              <Link
-                to="/suppliers"
-                style={{ textDecoration: "none", }}
-              >
+              </li>
+            </Link>
+            <Link to="/suppliers" style={{ textDecoration: "none" }}>
+              <li className={isActive("/suppliers") ? "active" : ""}>
                 Поставщикам
-              </Link>
                 <hr className="nav_line" />
-            </li>
-            <li className={isActive("/contact") ? "active" : ""}>
-              <Link
-                to="/contact"
-                style={{ textDecoration: "none", }}
-              >
+              </li>
+            </Link>
+            <Link to="/contact" style={{ textDecoration: "none" }}>
+              <li className={isActive("/contact") ? "active" : ""}>
                 Контакты
-              </Link>
                 <hr className="nav_line" />
-            </li>
-            <li className={isActive("/withdrawal") ? "active" : ""}>
-              <Link
-                to="/withdrawal"
-                style={{ textDecoration: "none", }}
-              >
+              </li>
+            </Link>
+            <Link to="/withdrawal" style={{ textDecoration: "none" }}>
+              <li className={isActive("/withdrawal") ? "active" : ""}>
                 Возврат товара
-              </Link>
-            </li>
+              </li>
+            </Link>
           </ul>
         </div>
       </div>

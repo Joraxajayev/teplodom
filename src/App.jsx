@@ -6,15 +6,15 @@ import "./scss/index.scss";
 import NewProd from "./pages/NewProduct/NewProd";
 
 //layout
-import HomeLayout from "./layouts/HomeLayout";
 import MasterLayout from "./layouts/HomeLayout";
 
 //pages
 import Home from "./pages/Homepage/Home";
 import Suppliers from "./pages/Suppliers/Suppliers";
-import Sale from './pages/Sale/Sale';
-import Contact from './pages/Contact/Contact';
-import Withdrawal from './pages/Withdrawal/Withdrawal';
+import Sale from "./pages/Sale/Sale";
+import Contact from "./pages/Contact/Contact";
+import Withdrawal from "./pages/Withdrawal/Withdrawal";
+import AllCategory from "./pages/AllCategory/AllCategory";
 
 function App() {
   return (
@@ -23,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MasterLayout />}>
             <Route index element={<Home />} />
+            <Route path="allCategory" element={<AllCategory />} />
             <Route path="sale" element={<Sale />} />
             <Route path="newProd" element={<NewProd />} />
             <Route path="suppliers" element={<Suppliers />} />

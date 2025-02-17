@@ -46,13 +46,13 @@ const Footer = () => {
               </ul>
               <ul className="footer_useful_links">
                 <h4>Полезное</h4>
-                <Link>
+                <Link to='/'>
                   <li className="footer_useful_link">О нас</li>
                 </Link>
-                <Link>
+                <Link to='/suppliers'>
                   <li className="footer_useful_link">Поставщикам</li>
                 </Link>
-                <Link>
+                <Link to='/withdrawal'>
                   <li className="footer_useful_link">Возврат товара</li>
                 </Link>
               </ul>
