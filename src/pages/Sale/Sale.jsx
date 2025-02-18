@@ -9,8 +9,6 @@ const Sale = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    // For demo, showing first 8 products as sale items
-    // You can modify this filter based on your sale criteria
     setProducts(productData.products.slice(0, 8));
   }, []);
 
