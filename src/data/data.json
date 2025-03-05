@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "isNew": true,
       "title": "СНПТ-8000-Ц ЭРА Стабилизатор напряжения",
       "price": "2 940 000",
@@ -9,10 +9,17 @@
       "image": "\\images\\products\\p1.png",
       "categoryId": 1,
       "liked": 837,
-      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения."
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "GRAY",
+        "BLACK"
+      ],
+      "madeBy": "USA"
     },
     {
-      "id": 2,
+      "id": "2",
       "isNew": true,
       "title": "СНК-2000-Ц ЭРА Стабилизатор напряжения",
       "price": "815 000",
@@ -20,10 +27,18 @@
       "image": "\\images\\products\\p2.png",
       "categoryId": 1,
       "liked": 274,
-      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения."
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "GRAY",
+        "BLACK",
+        "RED"
+      ],
+      "madeBy": "UZB"
     },
     {
-      "id": 3,
+      "id": "3",
       "isNew": true,
       "title": "СНК-2000-Ц ЭРА Стабилизатор напряжения",
       "price": "475 000",
@@ -31,21 +46,35 @@
       "image": "\\images\\products\\p3.png",
       "categoryId": 1,
       "liked": 692,
-      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения."
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "GRAY",
+        "BLACK"
+      ],
+      "madeBy": "RUS"
     },
     {
-      "id": 4,
+      "id": "4",
       "isNew": true,
       "title": "СНК-2000-Ц ЭРА Стабилизатор напряжения",
       "price": "2 940 000",
-      "isLiked": false,
+      "isLiked": true,
       "image": "\\images\\products\\p4.png",
       "categoryId": 1,
       "liked": 815,
-      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения."
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "GRAY",
+        "BLACK"
+      ],
+      "madeBy": "USA"
     },
     {
-      "id": 5,
+      "id": "5",
       "isNew": true,
       "title": "RMx-4es-3x1.5-50m Удленитель силовой",
       "price": "1 732 000",
@@ -53,10 +82,19 @@
       "image": "\\images\\products\\p5.png",
       "categoryId": 1,
       "liked": 104,
-      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения."
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "BLACK",
+        "GREEN",
+        "RED",
+        "WHITE"
+      ],
+      "madeBy": "TUR"
     },
     {
-      "id": 6,
+      "id": "6",
       "isNew": true,
       "title": "RMx-4es-3x1.5-50m Удленитель силовой",
       "price": "770 000",
@@ -64,21 +102,187 @@
       "image": "\\images\\products\\p6.png",
       "categoryId": 1,
       "liked": 539,
-      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения."
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "ORANGE",
+        "GREEN",
+        "BLACK"
+      ],
+      "madeBy": "UZB"
     },
     {
-      "id": 7,
+      "id": "7",
       "isNew": true,
       "title": "Люстра Rivoli Vittoria 1014-109",
       "price": "3 740 000",
-      "isLiked": false,
+      "isLiked": true,
       "image": "\\images\\products\\p7.png",
       "categoryId": 1,
       "liked": 390,
-      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения."
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "WHITE",
+        "GOLD",
+        "ORANGE"
+      ],
+      "madeBy": "RUS"
     },
     {
-      "id": 8,
+      "id": "8",
+      "isNew": true,
+      "title": "Люстра Rivoli Cascata 2016-206",
+      "price": "2 065 000",
+      "isLiked": true,
+      "image": "\\images\\products\\p8.png",
+      "categoryId": 1,
+      "liked": 922,
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "WHITE",
+        "GOLD",
+        "ORANGE"
+      ],
+      "madeBy": "UZB"
+    },
+    {
+      "id": "10",
+      "isNew": true,
+      "title": "СНПТ-8000-Ц ЭРА Стабилизатор напряжения",
+      "price": "2 940 000",
+      "isLiked": true,
+      "image": "\\images\\products\\p1.png",
+      "categoryId": 1,
+      "liked": 837,
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "GRAY",
+        "BLACK"
+      ],
+      "madeBy": "USA"
+    },
+    {
+      "id": "11",
+      "isNew": true,
+      "title": "СНК-2000-Ц ЭРА Стабилизатор напряжения",
+      "price": "815 000",
+      "isLiked": false,
+      "image": "\\images\\products\\p2.png",
+      "categoryId": 1,
+      "liked": 274,
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "GRAY",
+        "BLACK"
+      ],
+      "madeBy": "RUS"
+    },
+    {
+      "id": "12",
+      "isNew": true,
+      "title": "СНК-2000-Ц ЭРА Стабилизатор напряжения",
+      "price": "475 000",
+      "isLiked": false,
+      "image": "\\images\\products\\p3.png",
+      "categoryId": 1,
+      "liked": 692,
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "GRAY",
+        "BLACK",
+        "RED"
+      ],
+      "madeBy": "UZB"
+    },
+    {
+      "id": "13",
+      "isNew": true,
+      "title": "СНК-2000-Ц ЭРА Стабилизатор напряжения",
+      "price": "2 940 000",
+      "isLiked": true,
+      "image": "\\images\\products\\p4.png",
+      "categoryId": 1,
+      "liked": 815,
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "BLACK",
+        "GREEN",
+        "RED",
+        "WHITE"
+      ],
+      "madeBy": "TUR"
+    },
+    {
+      "id": "14",
+      "isNew": true,
+      "title": "RMx-4es-3x1.5-50m Удленитель силовой",
+      "price": "1 732 000",
+      "isLiked": false,
+      "image": "\\images\\products\\p5.png",
+      "categoryId": 1,
+      "liked": 104,
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "GRAY",
+        "BLACK"
+      ],
+      "madeBy": "USA"
+    },
+    {
+      "id": "15",
+      "isNew": true,
+      "title": "RMx-4es-3x1.5-50m Удленитель силовой",
+      "price": "770 000",
+      "isLiked": false,
+      "image": "\\images\\products\\p6.png",
+      "categoryId": 1,
+      "liked": 539,
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "WHITE",
+        "GOLD",
+        "ORANGE"
+      ],
+      "madeBy": "RUS"
+    },
+    {
+      "id": "16",
+      "isNew": true,
+      "title": "Люстра Rivoli Vittoria 1014-109",
+      "price": "3 740 000",
+      "isLiked": true,
+      "image": "\\images\\products\\p7.png",
+      "categoryId": 1,
+      "liked": 390,
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "ORANGE",
+        "GREEN",
+        "BLACK"
+      ],
+      "madeBy": "UZB"
+    },
+    {
+      "id": "17",
       "isNew": true,
       "title": "Люстра Rivoli Cascata 2016-206",
       "price": "2 065 000",
@@ -86,157 +290,165 @@
       "image": "\\images\\products\\p8.png",
       "categoryId": 1,
       "liked": 922,
-      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения."
+      "desc": "Синтетический теплоизоляционный материал, впервые созданный в США в 1941 году. Экструзионный пенополистирол имеет широкую сферу применения.",
+      "isDiscount": true,
+      "discount": 10,
+      "colors": [
+        "WHITE",
+        "GOLD",
+        "ORANGE"
+      ],
+      "madeBy": "UZB"
     }
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Сухи смеси",
       "image": "\\images\\categories\\c1.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Хоз товары",
       "image": "\\images\\categories\\c2.png"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Лакокрасочная материали",
       "image": "\\images\\categories\\c3.png"
     },
     {
-      "id": 4,
-      "title": "Изаляционные материали",
+      "id": "4",
+      "title": "ИЗАЛЯЦИОННЫЕ МАТЕРИАЛИ",
       "image": "\\images\\categories\\c4.png"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "саморезы",
       "image": "\\images\\categories\\c5.png"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "саморезы",
       "image": "\\images\\categories\\c6.png"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Каркас для ГКЛ",
       "image": "\\images\\categories\\c7.png"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Товары для сада",
       "image": "\\images\\categories\\c8.png"
     },
     {
-      "id": 9,
+      "id": "9",
       "title": "Листовые материалы",
       "image": "\\images\\categories\\c9.png"
     },
     {
-      "id": 10,
+      "id": "10",
       "title": "Металлопрокат",
       "image": "\\images\\categories\\c10.png"
     },
     {
-      "id": 11,
+      "id": "11",
       "title": "Крепежи",
       "image": "\\images\\categories\\c11.png"
     },
     {
-      "id": 12,
+      "id": "12",
       "title": "Химическая продукция",
       "image": "\\images\\categories\\c12.png"
     },
     {
-      "id": 13,
+      "id": "13",
       "title": "Ручные инструменты",
       "image": "\\images\\categories\\c13.png"
     },
     {
-      "id": 14,
+      "id": "14",
       "title": "Сантехника",
       "image": "\\images\\categories\\c14.png"
     },
     {
-      "id": 15,
+      "id": "15",
       "title": "Пиломатериалы",
       "image": "\\images\\categories\\c15.png"
     },
     {
-      "id": 16,
+      "id": "16",
       "title": "Водосточные системы",
       "image": "\\images\\categories\\c16.png"
     },
     {
-      "id": 17,
+      "id": "17",
       "title": "Напольные покрытия",
       "image": "\\images\\categories\\c17.png"
     },
     {
-      "id": 18,
+      "id": "18",
       "title": "Сайдинг",
       "image": "\\images\\categories\\c18.png"
     },
     {
-      "id": 19,
+      "id": "19",
       "title": "ЖБИ изделия",
       "image": "\\images\\categories\\c19.png"
     },
     {
-      "id": 20,
+      "id": "20",
       "title": "Сыпучие строительные",
       "image": "\\images\\categories\\c20.png"
     },
     {
-      "id": 21,
+      "id": "21",
       "title": "Инструменты штукатурные",
       "image": "\\images\\categories\\c21.png"
     },
     {
-      "id": 22,
+      "id": "22",
       "title": "Агрохимия",
       "image": "\\images\\categories\\c22.png"
     },
     {
-      "id": 23,
+      "id": "23",
       "title": "Лепной Декор",
       "image": "\\images\\categories\\c23.png"
     },
     {
-      "id": 24,
+      "id": "24",
       "title": "Вентиляция",
       "image": "\\images\\categories\\c24.png"
     },
     {
-      "id": 25,
+      "id": "25",
       "title": "Дренажные системы",
       "image": "\\images\\categories\\c25.png"
     },
     {
-      "id": 26,
+      "id": "26",
       "title": "Электро техника",
       "image": "\\images\\categories\\c26.png"
     },
     {
-      "id": 27,
+      "id": "27",
       "title": "Двери и Окна",
       "image": "\\images\\categories\\c27.png"
     },
     {
-      "id": 28,
+      "id": "28",
       "title": "Мебель",
       "image": "\\images\\categories\\c28.png"
     },
     {
-      "id": 29,
+      "id": "29",
       "title": "Плинтус",
       "image": "\\images\\categories\\c29.png"
     },
     {
-      "id": 30,
+      "id": "30",
       "title": "Мастер",
       "image": "\\images\\categories\\c30.png"
     }

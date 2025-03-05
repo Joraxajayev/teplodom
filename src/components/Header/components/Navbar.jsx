@@ -1,18 +1,29 @@
-import React from "react";
+// src/components/Header/components/Navbar.jsx
+import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/logo.svg";
 import searchIcon from "@/assets/search_icn.svg";
 import heartIcon from "@/assets/heart_icn.svg";
 import cartIcon from "@/assets/cart_icn.svg";
 import userIcon from "@/assets/user_icn.svg";
-
 import "../styles/Navbar.scss";
 
 const Navbar = () => {
-  // useLocation orqali joriy URL manzilini olamiz
   const location = useLocation();
+  const [profileName, setProfileName] = useState("");
 
-  // Belgilangan yo'l joriy manzilga teng bo'lsa, true qaytaradi
+  // LocalStorage'dan ro'yxatdan o'tgan foydalanuvchi ismini o'qish
+  useEffect(() => {
+    const storedData = localStorage.getItem("profileData");
+    if (storedData) {
+      const parsedData = JSON.parse(storedData);
+      if (parsedData.name) {
+        setProfileName(parsedData.name);
+      }
+    }
+  }, []);
+
+  // Joriy URLga qarab aktiv linkni aniqlash
   const isActive = (path) => location.pathname === path;
 
   return (
@@ -31,11 +42,7 @@ const Navbar = () => {
             </div>
             <div className="searchContainer">
               <img src={searchIcon} alt="Search" />
-              <input
-                type="text"
-                placeholder="Поиск..."
-                className="searchInput"
-              />
+              <input type="text" placeholder="Поиск..." className="searchInput" />
             </div>
             <div className="menu_settings_content">
               <label htmlFor="menuopener" className="menu_settings" />
@@ -47,20 +54,23 @@ const Navbar = () => {
                 <img src={heartIcon} alt="Likes" />
               </div>
             </Link>
-            <Link to="/cart" style={{ textDecoration: "none" }}>
+            <Link to="/basket" style={{ textDecoration: "none" }}>
               <div className="cart">
                 <img src={cartIcon} alt="Cart" />
               </div>
             </Link>
-            <Link to="/profile" style={{ textDecoration: "none" }}>
+            {/* Agar foydalanuvchi ro'yxatdan o'tgan bo'lsa, ismi ko'rsatiladi va /profile ga, aks holda /login ga o'tadi */}
+            <Link
+              to={profileName ? "/profile" : "/login"}
+              style={{ textDecoration: "none" }}
+            >
               <div className="profile">
                 <img src={userIcon} alt="Profile" />
-                <span>Профиль</span>
+                <span>{profileName || "Профиль"}</span>
               </div>
             </Link>
           </div>
         </div>
-
         {/* Navigatsiya menyusi */}
         <div className="nav-end">
           <input type="checkbox" id="menuopener" />
